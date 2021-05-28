@@ -1,0 +1,41 @@
+.partner{
+  &-wrapper{}
+  &-item{
+    margin-bottom: 80px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &-media{
+    img{
+      width: 100%;
+    }
+  }
+  &-description{
+
+    ul{
+      counter-reset: section;
+      list-style-type: none;
+    }
+    li{
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 40px;
+      &:before{
+        position: absolute;
+        counter-increment: section;
+        content: counters(section,".") " ";
+        left: 0;
+        top: 0;
+        background-color: rgba($blue, .2);
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $blue;
+        text-align: center;
+      }
+    }
+  }
+}

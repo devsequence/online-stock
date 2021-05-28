@@ -1,0 +1,58 @@
+.footer{
+  &-top{
+    padding: 30px 0;
+  }
+  &-item{
+    margin-bottom: 30px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &-item__title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+    color: #262526;
+    margin-bottom: 10px;
+  }
+  &-item__list{
+    li{
+      margin-bottom: 10px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+    a{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: $default;
+    }
+  }
+  &-bottom{
+    padding: 10px 0;
+    background-color: $blue-100;
+    color: $white;
+  }
+  &-bottom-nav{
+    margin-bottom: 10px;
+    a{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      text-decoration: underline;
+      color: $white;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  &-copy{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $white;
+  }
+}

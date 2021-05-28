@@ -1,0 +1,199 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: $default;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+
+}
+h3, h4, h5, h6{
+  font-family: $OpenSans;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+h1 {
+  font-family: $OpenSans;
+  font-size: 50px;
+  line-height: 50px;
+  color: $default;
+}
+strong{
+  font-family: $OpenSans;
+  font-weight: 900;
+}
+blockquote{
+  position: relative;
+  padding-left: 50px;
+  &:before{
+    position: absolute;
+    content: '';
+    left: 25px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #dedede;
+  }
+}
+h2 {
+  font-family: $OpenSans;
+  font-size: 40px;
+  line-height: 40px;
+  color: $default;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 26px;
+  color: $default;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 25px;
+  color: $default;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 25px;
+  color: $default;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 21px;
+  color: $default;
+}
+
+img {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+}
+section {
+  position: relative;
+  padding: 40px 0;
+  z-index: 1;
+}
+
+.section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.row.min {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.row.min > div[class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+.hidden {
+  display: none;
+}
+.scroll-h{
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+a,
+button,
+input,
+select,
+textarea,
+span,
+.icon {
+  transition: all 150ms ease;
+}
+button{
+  outline: none;
+  cursor: pointer;
+  font-family: $OpenSans;
+}
+.btn-primary{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+  color: $white;
+  background: $primary;
+  padding: 17px 50px;
+}
+.title-section{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: $black;
+  margin-bottom: 30px;
+}
+.link-section{
+  text-align: center;
+  .btn-primary{
+    margin-bottom: 10px;
+  }
+  &__question{
+    span{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: $black;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    a{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: $blue;
+      display: inline-block;
+    }
+  }
+}
+.banner{
+  &-wrapper{
+    text-align: center;
+    .container{}
+    .btn-primary{}
+  }
+  &-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: $black;
+    margin-bottom: 20px;
+    span{
+      font-weight: bold;
+      display: block;
+      color: rgba($black,.4);
+    }
+  }
+}
