@@ -21,6 +21,10 @@
       margin-bottom: 20px;
       position: relative;
       padding-left: 40px;
+      font-size: 15px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      color: $black;
       &:before{
         position: absolute;
         counter-increment: section;

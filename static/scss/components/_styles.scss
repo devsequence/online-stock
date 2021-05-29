@@ -95,6 +95,25 @@ section {
   padding-left: 5px;
   padding-right: 5px;
 }
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px){
+    max-width: 540px;
+  }
+  @media (min-width: 768px){
+    max-width: 720px;
+  }
+  @media (min-width: 992px){
+    max-width: 960px;
+  }
+  @media (min-width: 1170px){
+    max-width: 1140px;
+  }
+}
 
 .overflow {
   overflow: hidden !important;
@@ -156,7 +175,7 @@ button{
 .link-section{
   text-align: center;
   .btn-primary{
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
   &__question{
     span{
@@ -178,6 +197,7 @@ button{
 }
 .banner{
   &-wrapper{
+    background-color: $light;
     text-align: center;
     .container{}
     .btn-primary{}
